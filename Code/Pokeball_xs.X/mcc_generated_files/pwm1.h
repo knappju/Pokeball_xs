@@ -1,25 +1,25 @@
-/**
-  PWM1 Generated Driver API Header File
+ /**
+   PWM1 Generated Driver API Header File
+ 
+   @Company
+     Microchip Technology Inc. 
 
-  @Company
-    Microchip Technology Inc.
-
-  @File Name
+   @File Name
     pwm1.h
 
-  @Summary
-    This is the generated header file for the PWM1 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
-
-  @Description
-    This header file provides APIs for driver for PWM1.
-    Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
-        Device            :  PIC12LF1571
-        Driver Version    :  2.01
-    The generated drivers are tested against the following:
-        Compiler          :  XC8 2.31 and above or later
-        MPLAB             :  MPLAB X 5.45
-*/
+   @Summary
+     This is the generated header file for the PWM1 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+ 
+   @Description
+     This header file provides APIs for driver for PWM1.
+     Generation Information :
+         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
+         Device            :  PIC12LF1501
+         Driver Version    :  2.01
+     The generated drivers are tested against the following:
+         Compiler          :  XC8 2.31 and above or later
+         MPLAB             :  MPLAB X 5.45
+ */
 
 /*
     (c) 2018 Microchip Technology Inc. and its subsidiaries. 
@@ -45,375 +45,97 @@
 */
 
 #ifndef PWM1_H
-#define PWM1_H
+ #define PWM1_H
+ 
+ /**
+   Section: Included Files
+ */
 
-/**
-  Section: Included Files
-*/
+ #include <xc.h>
+ #include <stdint.h>
 
-#include <xc.h>
-#include <stdint.h>
-#include <stdbool.h>
+ #ifdef __cplusplus  // Provide C++ Compatibility
 
-#ifdef __cplusplus  // Provide C++ Compatibility
+     extern "C" {
 
-    extern "C" {
+ #endif
 
-#endif
+ /**
+   Section: Macro Declarations
+ */
 
-/**
-  Section: PWM Module APIs
-*/
+ #define PWM1_INITIALIZE_DUTY_VALUE    0
 
-/**
-  @Summary
-    Initializes the PWM1
+ /**
+   Section: PWM Module APIs
+ */
 
-  @Description
-    This routine initializes the Initializes the PWM1.
-    This routine must be called before any other PWM routine is called.
-    This routine should only be called once during system initialization.
+ /**
+   @Summary
+     Initializes the PWM1
 
-  @Preconditions
-    None
+   @Description
+     This routine initializes the EPWM1_Initialize
+     This routine must be called before any other PWM1 routine is called.
+     This routine should only be called once during system initialization.
 
-  @Param
-    None
-
-  @Returns
-    None
-
-  @Comment
-    
-
-  @Example
-    <code>
-    
-    </code>
-*/
-void PWM1_Initialize(void);
-
-/**
-  @Summary
-    This function starts the PWM1.
-
-  @Description
-    This function starts the PWM1 operation.
-    This function must be called after the initialization of PWM1.
-
-  @Preconditions
-    Initialize  the PWM1 before calling this function.
+   @Preconditions
+     None
 
    @Param
-    None
+     None
 
-  @Returns
-    None
+   @Returns
+     None
 
-  @Example
-    <code>
-    // Initialize PWM1 module
-
-    // Start PWM1
-    PWM1_Start();
-
-    // Do something else...
-    </code>
-*/
-void PWM1_Start(void);
-
-/**
-  @Summary
-    This function stops the PWM1.
-
-  @Description
-    This function stops the PWM1 operation.
-    This function must be called after the start of PWM1.
-
-  @Preconditions
-    Initialize  the PWM1 before calling this function.
-
-  @Param
-    None
-
-  @Returns
-    None
+   @Comment
+     
 
   @Example
-    <code>
-    // Initialize PWM1 module
+     <code>
+     uint16_t dutycycle;
 
-    // Start PWM1
-    PWM1_StartTimer();
+     PWM1_Initialize();
+     PWM1_LoadDutyValue(dutycycle);
+     </code>
+  */
+ void PWM1_Initialize(void);
 
-    // Do something else...
+ /**
+   @Summary
+     Loads 16-bit duty cycle.
 
-    // Stop PWM1;
-    PWM1_Stop();
-    </code>
-*/
-void PWM1_Stop(void);
+   @Description
+     This routine loads the 16 bit duty cycle value.
 
+   @Preconditions
+     PWM1_Initialize() function should have been called 
+         before calling this function.
 
-/**
-  @Summary
-    This function used to check output status of PWM1.
+   @Param
+     Pass 16bit duty cycle value.
 
-  @Description
-    Check output status of PWM1 as High or Low.    
+   @Returns
+     None
 
-  @Preconditions
-    Start the PWM1 before calling this function.
+   @Example
+     <code>
+     uint16_t dutycycle;
 
-  @Param
-    None
+     PWM1_Initialize();
+     PWM1_LoadDutyValue(dutycycle);
+     </code>
+ */
+ void PWM1_LoadDutyValue(uint16_t dutyValue);
 
-  @Returns
-    true - Output High.
-	false - Output Low.
+ 
+ #ifdef __cplusplus  // Provide C++ Compatibility
 
-  @Example
-    <code>
-    
-    </code>
-*/
-bool PWM1_CheckOutputStatus(void);
+     }
 
-/**
-  @Summary
-    This function is used to load buffer of PWM1 at the end of period.
+ #endif
 
-  @Description
-    load buffer of PWM1 at the end of period.
-
-  @Preconditions
-     Initialize  the PWM1 before calling this function.
-
-  @Param
-    None
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    
-    </code>
-*/
-void PWM1_LoadBufferSet(void);
-
-/**
-  @Summary
-    Load required 16 bit phase count
-
-  @Description
-    Set the expected phase count
-
-  @Preconditions
-    None
-
-  @Param
-    Pass 16 bit phase count
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    
-    </code>
-*/
-void PWM1_PhaseSet(uint16_t phaseCount);
-
-/**
-  @Summary
-    Load required 16 bit Duty Cycle
-
-  @Description
-    Set the expected Duty Cycle
-
-  @Preconditions
-    None
-
-  @Param
-    Pass 16 bit Duty Cycle
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    
-    </code>
-*/
-void PWM1_DutyCycleSet(uint16_t dutyCycleCount);
-
-/**
-  @Summary
-    Load required 16 bit Period
-
-  @Description
-    Set the expected Period
-
-  @Preconditions
-    None
-
-  @Param
-    Pass 16 bit Period
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    
-    </code>
-*/
-void PWM1_PeriodSet(uint16_t periodCount);
-
-/**
-  @Summary
-    Load required 16 bit Offset
-
-  @Description
-    Set the expected Offset
-
-  @Preconditions
-    None
-
-  @Param
-    Pass 16 bit Offset
-
-  @Returns
-    None
-
-  @Example
-    <code>
-    
-    </code>
-*/
-void PWM1_OffsetSet(uint16_t offsetCount);
-
-/**
-  @Summary
-    Read measured Timer count
-
-  @Description    
-    Read the measured Timer count
- * 
-  @Preconditions
-    None
-
-  @Param
-    None
-
-  @Returns
-    Return 16 bit Timer count
-
-  @Example
-    <code>
-    
-    </code>
-*/
-uint16_t PWM1_TimerCountGet(void);
-
-/**
-  @Summary
-    Returns status of Offset interrupt flag bit (OFIF ).
-
-  @Description    
-    When PWMTMR = PWMOF value offset flag sets.
-
-  @Preconditions
-    None
-
-  @Param
-    None
-
-  @Returns
-    true - PWMTMR >= PWMOF value
-    false - PWMTMR < PWMOF value
-
-  @Example
-    <code>
-    
-    </code>
-*/
-bool PWM1_IsOffsetMatchOccured(void);
-
-/**
-  @Summary
-    Returns status of Phase interrupt flag bit (PHIF ).
-
-  @Description    
-    When PWMTMR = PWMPH value, Phase flag sets.
-
-  @Preconditions
-    None
-
-  @Param
-    None
-
-  @Returns
-    true - PWMTMR count is >= PWMPH value
-    false - PWMTMR count is < PWMPH value
-
-  @Example
-    <code>
-    
-    </code>
-*/
-bool PWM1_IsPhaseMatchOccured(void);
-
-/**
-  @Summary
-    Returns status of DutyCycle interrupt flag bit (DCIF ).
-
-  @Description    
-    When PWMTMR = PWMDC value DutyCycle flag sets.
-
-  @Preconditions
-    None
-
-  @Param
-    None
-
-  @Returns
-    true - PWMTMR count is >= PWMDC value
-    false - PWMTMR count is < PWMDC value
-
-  @Example
-    <code>
-    
-    </code>
-*/
-bool PWM1_IsDutyCycleMatchOccured(void);
-
-/**
-  @Summary
-    Returns status of Period interrupt flag bit (PRIF ).
-
-  @Description    
-    When PWMTMR = PWMPR value offset flag sets.
-
-  @Preconditions
-    None
-
-  @Param
-    None
-
-  @Returns
-    true - PWMTMR count is >= PWMPR value
-    false - PWMTMR count is < PWMPR value
-
-  @Example
-    <code>
-    
-    </code>
-*/
-bool PWM1_IsPeriodMatchOccured(void);
-
-#endif	/* PWM1_H */
-/**
- End of File
-*/
+ #endif	//PWM1_H
+ /**
+  End of File
+ */

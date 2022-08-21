@@ -14,7 +14,7 @@
     This header file provides APIs for driver for .
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
-        Device            :  PIC12LF1571
+        Device            :  PIC12LF1501
         Driver Version    :  2.11
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.31 and above
@@ -70,7 +70,6 @@
 #define IO_RA0_LAT                  LATAbits.LATA0
 #define IO_RA0_PORT                 PORTAbits.RA0
 #define IO_RA0_WPU                  WPUAbits.WPUA0
-#define IO_RA0_OD                   ODCONAbits.ODA0
 #define IO_RA0_ANS                  ANSELAbits.ANSA0
 #define IO_RA0_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
 #define IO_RA0_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
@@ -80,8 +79,6 @@
 #define IO_RA0_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
 #define IO_RA0_SetPullup()          do { WPUAbits.WPUA0 = 1; } while(0)
 #define IO_RA0_ResetPullup()        do { WPUAbits.WPUA0 = 0; } while(0)
-#define IO_RA0_SetPushPull()        do { ODCONAbits.ODA0 = 0; } while(0)
-#define IO_RA0_SetOpenDrain()       do { ODCONAbits.ODA0 = 1; } while(0)
 #define IO_RA0_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
 #define IO_RA0_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
 

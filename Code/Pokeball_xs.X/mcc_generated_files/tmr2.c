@@ -14,7 +14,7 @@
     This source file provides APIs for TMR2.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
-        Device            :  PIC12LF1571
+        Device            :  PIC12LF1501
         Driver Version    :  2.01
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.31 and above
@@ -63,8 +63,8 @@ void TMR2_Initialize(void)
 {
     // Set TMR2 to the options selected in the User Interface
 
-    // PR2 62; 
-    PR2 = 0x3E;
+    // PR2 249; 
+    PR2 = 0xF9;
 
     // TMR2 0; 
     TMR2 = 0x00;
@@ -72,8 +72,8 @@ void TMR2_Initialize(void)
     // Clearing IF flag.
     PIR1bits.TMR2IF = 0;
 
-    // T2CKPS 1:1; T2OUTPS 1:1; TMR2ON on; 
-    T2CON = 0x04;
+    // T2CKPS 1:16; T2OUTPS 1:1; TMR2ON on; 
+    T2CON = 0x06;
 }
 
 void TMR2_StartTimer(void)

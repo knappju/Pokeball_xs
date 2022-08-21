@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name "Pokeball_xs-rescue")(type "Legacy")(uri "${KIPRJMOD}/Pokeball_xs-rescue.lib")(options "")(descr ""))
-)
