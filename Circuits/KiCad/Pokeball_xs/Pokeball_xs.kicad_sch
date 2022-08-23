@@ -1392,6 +1392,12 @@
     (uuid fff4ef7d-6073-46aa-9af2-ca98eda63642)
   )
 
+  (text "Might need to use internal pull up on btn_in. \nVcc might pull up PGD.\nMaybe just don't populate R7."
+    (at 199.39 156.21 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 8be4753e-fd31-46b9-a540-429443a21fba)
+  )
+
   (global_label "MCLR" (shape output) (at 60.96 165.1 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 01299b6f-461c-4462-833e-67669a3bd5d2)
