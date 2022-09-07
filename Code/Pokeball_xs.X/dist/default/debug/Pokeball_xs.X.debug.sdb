@@ -1,43 +1,43 @@
 [p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
 [d version 1.1 ]
 [d edition pro ]
-[d chip 12LF1501 ]
+[d chip 12LF1571 ]
 [d frameptr 6 ]
-"46 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\app.c
+"44 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\app.c
 [v _appInit appInit `(v  1 e 1 0 ]
-"50
+"49
 [v _appHandler appHandler `(v  1 e 1 0 ]
-"80
+"82
 [v _msTick msTick `(v  1 e 1 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"50 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\main.c
+"50 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"52 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/mcc.c
+"50 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "63
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"71
+"73
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"58 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm1.c
+"58 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm1.c
 [v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
-"72
-[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
-"58 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm3.c
+"113
+[v _PWM1_Start PWM1_Start `(v  1 e 1 0 ]
+"118
+[v _PWM1_Stop PWM1_Stop `(v  1 e 1 0 ]
+"139
+[v _PWM1_DutyCycleSet PWM1_DutyCycleSet `(v  1 e 1 0 ]
+"58 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"58 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm3.c
 [v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
-"72
-[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
-"58 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm4.c
-[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
-"72
-[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
-"64 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
+"64 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "120
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -49,13 +49,13 @@
 [v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
 "182
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"62 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr2.c
+"62 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "79
 [v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
-"44 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\app.c
+"42 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\app.c
 [v _msTicks msTicks `uo  1 e 8 0 ]
-[s S311 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S327 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -64,48 +64,49 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic12lf1501.h
-[s S320 . 1 `uc 1 . 1 0 :2:0 
+"375 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic12lf1571.h
+[s S336 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S325 . 1 `S311 1 . 1 0 `S320 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES325  1 e 1 @11 ]
-[s S69 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S341 . 1 `S327 1 . 1 0 `S336 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES341  1 e 1 @11 ]
+[s S74 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 . 1 0 :4:2 
 `uc 1 ADIF 1 0 :1:6 
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
-"493
-[u S75 . 1 `S69 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES75  1 e 1 @17 ]
-"599
+"502
+[u S80 . 1 `S74 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES80  1 e 1 @17 ]
+"608
 [v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
-"619
+"628
 [v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
-"639
+"648
 [v _T1CON T1CON `VEuc  1 e 1 @24 ]
-[s S205 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S211 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
-`uc 1 T1CKPS 1 0 :2:4 
-`uc 1 TMR1CS 1 0 :2:6 
-]
-"661
-[s S212 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 `uc 1 TMR1CS0 1 0 :1:6 
 `uc 1 TMR1CS1 1 0 :1:7 
 ]
-[u S218 . 1 `S205 1 . 1 0 `S212 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES218  1 e 1 @24 ]
-"706
+"670
+[s S220 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S224 . 1 `S211 1 . 1 0 `S220 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES224  1 e 1 @24 ]
+"715
 [v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
-[s S235 . 1 `uc 1 T1GSS 1 0 :2:0 
+[s S241 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO_nDONE 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -113,155 +114,363 @@
 `uc 1 T1GPOL 1 0 :1:6 
 `uc 1 TMR1GE 1 0 :1:7 
 ]
-"726
-[s S243 . 1 `uc 1 T1GSS0 1 0 :1:0 
-`uc 1 T1GSS1 1 0 :1:1 
+"737
+[s S250 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
 ]
-[u S246 . 1 `S235 1 . 1 0 `S243 1 . 1 0 ]
-[v _T1GCONbits T1GCONbits `VES246  1 e 1 @25 ]
-"776
+[u S254 . 1 `S241 1 . 1 0 `S250 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES254  1 e 1 @25 ]
+"792
 [v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
-"796
+"812
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
-"816
+"832
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-[s S85 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S90 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"853
+[s S98 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
-"837
-[s S89 . 1 `uc 1 T2CKPS0 1 0 :1:0 
-`uc 1 T2CKPS1 1 0 :1:1 
-`uc 1 . 1 0 :1:2 
-`uc 1 TOUTPS0 1 0 :1:3 
-`uc 1 TOUTPS1 1 0 :1:4 
-`uc 1 TOUTPS2 1 0 :1:5 
-`uc 1 TOUTPS3 1 0 :1:6 
-]
-[u S97 . 1 `S85 1 . 1 0 `S89 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES97  1 e 1 @28 ]
-"887
+[u S102 . 1 `S90 1 . 1 0 `S98 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES102  1 e 1 @28 ]
+"903
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
-[s S179 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S185 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 . 1 0 :4:2 
 `uc 1 ADIE 1 0 :1:6 
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
-"951
-[u S185 . 1 `S179 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES185  1 e 1 @145 ]
-[s S26 . 1 `uc 1 PS 1 0 :3:0 
+"975
+[u S191 . 1 `S185 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES191  1 e 1 @145 ]
+[s S26 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
 `uc 1 INTEDG 1 0 :1:6 
 `uc 1 nWPUEN 1 0 :1:7 
 ]
-"1053
-[s S33 . 1 `uc 1 PS0 1 0 :1:0 
-`uc 1 PS1 1 0 :1:1 
-`uc 1 PS2 1 0 :1:2 
+"1077
+[s S35 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S40 . 1 `S26 1 . 1 0 `S33 1 . 1 0 ]
+[u S40 . 1 `S26 1 . 1 0 `S35 1 . 1 0 ]
 [v _OPTION_REGbits OPTION_REGbits `VES40  1 e 1 @149 ]
-"1170
+"1194
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
-"1229
+"1253
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1311
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
-"1550
+"1689
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-"1744
+"1891
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
-"1946
+"2107
 [v _APFCON APFCON `VEuc  1 e 1 @285 ]
-"1992
+"2197
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
-"2209
+"2414
 [v _WPUA WPUA `VEuc  1 e 1 @524 ]
-"2857
-[v _PWM1DCL PWM1DCL `VEuc  1 e 1 @1553 ]
-"2893
-[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @1554 ]
-"2963
-[v _PWM1CON PWM1CON `VEuc  1 e 1 @1555 ]
-"3221
-[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @1559 ]
-"3257
-[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @1560 ]
-"3327
-[v _PWM3CON PWM3CON `VEuc  1 e 1 @1561 ]
-"3403
-[v _PWM4DCL PWM4DCL `VEuc  1 e 1 @1562 ]
-"3439
-[v _PWM4DCH PWM4DCH `VEuc  1 e 1 @1563 ]
-"3509
-[v _PWM4CON PWM4CON `VEuc  1 e 1 @1564 ]
-"57 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
+"2472
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"2525
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"2578
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+"3265
+[v _PWM1PHL PWM1PHL `VEuc  1 e 1 @3473 ]
+"3343
+[v _PWM1PHH PWM1PHH `VEuc  1 e 1 @3474 ]
+"3428
+[v _PWM1DCL PWM1DCL `VEuc  1 e 1 @3475 ]
+"3506
+[v _PWM1DCH PWM1DCH `VEuc  1 e 1 @3476 ]
+"3591
+[v _PWM1PRL PWM1PRL `VEuc  1 e 1 @3477 ]
+"3669
+[v _PWM1PRH PWM1PRH `VEuc  1 e 1 @3478 ]
+"3754
+[v _PWM1OFL PWM1OFL `VEuc  1 e 1 @3479 ]
+"3832
+[v _PWM1OFH PWM1OFH `VEuc  1 e 1 @3480 ]
+"3917
+[v _PWM1TMRL PWM1TMRL `VEuc  1 e 1 @3481 ]
+"3995
+[v _PWM1TMRH PWM1TMRH `VEuc  1 e 1 @3482 ]
+"4073
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @3483 ]
+[s S408 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 MODE 1 0 :2:2 
+`uc 1 POL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 OE 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"4106
+[s S415 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM1MODE0 1 0 :1:2 
+`uc 1 PWM1MODE1 1 0 :1:3 
+]
+[s S419 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM1MODE 1 0 :2:2 
+`uc 1 PWM1POL 1 0 :1:4 
+`uc 1 PWM1OUT 1 0 :1:5 
+`uc 1 PWM1OE 1 0 :1:6 
+`uc 1 PWM1EN 1 0 :1:7 
+]
+[s S426 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 MODE0 1 0 :1:2 
+`uc 1 MODE1 1 0 :1:3 
+]
+[u S430 . 1 `S408 1 . 1 0 `S415 1 . 1 0 `S419 1 . 1 0 `S426 1 . 1 0 ]
+[v _PWM1CONbits PWM1CONbits `VES430  1 e 1 @3483 ]
+"4181
+[v _PWM1INTE PWM1INTE `VEuc  1 e 1 @3484 ]
+"4307
+[v _PWM1INTF PWM1INTF `VEuc  1 e 1 @3485 ]
+[s S496 . 1 `uc 1 PRIF 1 0 :1:0 
+`uc 1 DCIF 1 0 :1:1 
+`uc 1 PHIF 1 0 :1:2 
+`uc 1 OFIF 1 0 :1:3 
+]
+"4331
+[s S501 . 1 `uc 1 PWM1PRIF 1 0 :1:0 
+`uc 1 PWM1DCIF 1 0 :1:1 
+`uc 1 PWM1PHIF 1 0 :1:2 
+`uc 1 PWM1OFIF 1 0 :1:3 
+]
+[u S506 . 1 `S496 1 . 1 0 `S501 1 . 1 0 ]
+[v _PWM1INTFbits PWM1INTFbits `VES506  1 e 1 @3485 ]
+"4433
+[v _PWM1CLKCON PWM1CLKCON `VEuc  1 e 1 @3486 ]
+"4541
+[v _PWM1LDCON PWM1LDCON `VEuc  1 e 1 @3487 ]
+[s S458 . 1 `uc 1 LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 LDT 1 0 :1:6 
+`uc 1 LDA 1 0 :1:7 
+]
+"4568
+[s S463 . 1 `uc 1 PWM1LDS0 1 0 :1:0 
+`uc 1 PWM1LDS1 1 0 :1:1 
+]
+[s S466 . 1 `uc 1 PWM1LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 PWM1LDM 1 0 :1:6 
+`uc 1 PWM1LD 1 0 :1:7 
+]
+[s S471 . 1 `uc 1 LDS0 1 0 :1:0 
+`uc 1 LDS1 1 0 :1:1 
+]
+[u S474 . 1 `S458 1 . 1 0 `S463 1 . 1 0 `S466 1 . 1 0 `S471 1 . 1 0 ]
+[v _PWM1LDCONbits PWM1LDCONbits `VES474  1 e 1 @3487 ]
+"4623
+[v _PWM1OFCON PWM1OFCON `VEuc  1 e 1 @3488 ]
+"4738
+[v _PWM2PHL PWM2PHL `VEuc  1 e 1 @3489 ]
+"4816
+[v _PWM2PHH PWM2PHH `VEuc  1 e 1 @3490 ]
+"4901
+[v _PWM2DCL PWM2DCL `VEuc  1 e 1 @3491 ]
+"4979
+[v _PWM2DCH PWM2DCH `VEuc  1 e 1 @3492 ]
+"5064
+[v _PWM2PRL PWM2PRL `VEuc  1 e 1 @3493 ]
+"5142
+[v _PWM2PRH PWM2PRH `VEuc  1 e 1 @3494 ]
+"5227
+[v _PWM2OFL PWM2OFL `VEuc  1 e 1 @3495 ]
+"5305
+[v _PWM2OFH PWM2OFH `VEuc  1 e 1 @3496 ]
+"5390
+[v _PWM2TMRL PWM2TMRL `VEuc  1 e 1 @3497 ]
+"5468
+[v _PWM2TMRH PWM2TMRH `VEuc  1 e 1 @3498 ]
+"5546
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @3499 ]
+"5579
+[s S791 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM2MODE0 1 0 :1:2 
+`uc 1 PWM2MODE1 1 0 :1:3 
+]
+[s S795 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM2MODE 1 0 :2:2 
+`uc 1 PWM2POL 1 0 :1:4 
+`uc 1 PWM2OUT 1 0 :1:5 
+`uc 1 PWM2OE 1 0 :1:6 
+`uc 1 PWM2EN 1 0 :1:7 
+]
+[u S806 . 1 `S408 1 . 1 0 `S791 1 . 1 0 `S795 1 . 1 0 `S426 1 . 1 0 ]
+[v _PWM2CONbits PWM2CONbits `VES806  1 e 1 @3499 ]
+"5654
+[v _PWM2INTE PWM2INTE `VEuc  1 e 1 @3500 ]
+"5780
+[v _PWM2INTF PWM2INTF `VEuc  1 e 1 @3501 ]
+"5804
+[s S877 . 1 `uc 1 PWM2PRIF 1 0 :1:0 
+`uc 1 PWM2DCIF 1 0 :1:1 
+`uc 1 PWM2PHIF 1 0 :1:2 
+`uc 1 PWM2OFIF 1 0 :1:3 
+]
+[u S882 . 1 `S496 1 . 1 0 `S877 1 . 1 0 ]
+[v _PWM2INTFbits PWM2INTFbits `VES882  1 e 1 @3501 ]
+"5906
+[v _PWM2CLKCON PWM2CLKCON `VEuc  1 e 1 @3502 ]
+"6014
+[v _PWM2LDCON PWM2LDCON `VEuc  1 e 1 @3503 ]
+"6041
+[s S839 . 1 `uc 1 PWM2LDS0 1 0 :1:0 
+`uc 1 PWM2LDS1 1 0 :1:1 
+]
+[s S842 . 1 `uc 1 PWM2LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 PWM2LDM 1 0 :1:6 
+`uc 1 PWM2LD 1 0 :1:7 
+]
+[u S850 . 1 `S458 1 . 1 0 `S839 1 . 1 0 `S842 1 . 1 0 `S471 1 . 1 0 ]
+[v _PWM2LDCONbits PWM2LDCONbits `VES850  1 e 1 @3503 ]
+"6096
+[v _PWM2OFCON PWM2OFCON `VEuc  1 e 1 @3504 ]
+"6211
+[v _PWM3PHL PWM3PHL `VEuc  1 e 1 @3505 ]
+"6289
+[v _PWM3PHH PWM3PHH `VEuc  1 e 1 @3506 ]
+"6374
+[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @3507 ]
+"6452
+[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @3508 ]
+"6537
+[v _PWM3PRL PWM3PRL `VEuc  1 e 1 @3509 ]
+"6615
+[v _PWM3PRH PWM3PRH `VEuc  1 e 1 @3510 ]
+"6700
+[v _PWM3OFL PWM3OFL `VEuc  1 e 1 @3511 ]
+"6778
+[v _PWM3OFH PWM3OFH `VEuc  1 e 1 @3512 ]
+"6863
+[v _PWM3TMRL PWM3TMRL `VEuc  1 e 1 @3513 ]
+"6941
+[v _PWM3TMRH PWM3TMRH `VEuc  1 e 1 @3514 ]
+"7019
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @3515 ]
+"7052
+[s S575 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM3MODE0 1 0 :1:2 
+`uc 1 PWM3MODE1 1 0 :1:3 
+]
+[s S579 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PWM3MODE 1 0 :2:2 
+`uc 1 PWM3POL 1 0 :1:4 
+`uc 1 PWM3OUT 1 0 :1:5 
+`uc 1 PWM3OE 1 0 :1:6 
+`uc 1 PWM3EN 1 0 :1:7 
+]
+[u S590 . 1 `S408 1 . 1 0 `S575 1 . 1 0 `S579 1 . 1 0 `S426 1 . 1 0 ]
+[v _PWM3CONbits PWM3CONbits `VES590  1 e 1 @3515 ]
+"7127
+[v _PWM3INTE PWM3INTE `VEuc  1 e 1 @3516 ]
+"7253
+[v _PWM3INTF PWM3INTF `VEuc  1 e 1 @3517 ]
+"7277
+[s S661 . 1 `uc 1 PWM3PRIF 1 0 :1:0 
+`uc 1 PWM3DCIF 1 0 :1:1 
+`uc 1 PWM3PHIF 1 0 :1:2 
+`uc 1 PWM3OFIF 1 0 :1:3 
+]
+[u S666 . 1 `S496 1 . 1 0 `S661 1 . 1 0 ]
+[v _PWM3INTFbits PWM3INTFbits `VES666  1 e 1 @3517 ]
+"7379
+[v _PWM3CLKCON PWM3CLKCON `VEuc  1 e 1 @3518 ]
+"7487
+[v _PWM3LDCON PWM3LDCON `VEuc  1 e 1 @3519 ]
+"7514
+[s S623 . 1 `uc 1 PWM3LDS0 1 0 :1:0 
+`uc 1 PWM3LDS1 1 0 :1:1 
+]
+[s S626 . 1 `uc 1 PWM3LDS 1 0 :2:0 
+`uc 1 . 1 0 :4:2 
+`uc 1 PWM3LDM 1 0 :1:6 
+`uc 1 PWM3LD 1 0 :1:7 
+]
+[u S634 . 1 `S458 1 . 1 0 `S623 1 . 1 0 `S626 1 . 1 0 `S471 1 . 1 0 ]
+[v _PWM3LDCONbits PWM3LDCONbits `VES634  1 e 1 @3519 ]
+"7569
+[v _PWM3OFCON PWM3OFCON `VEuc  1 e 1 @3520 ]
+"57 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"50 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\main.c
+"50 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "77
 } 0
-"46 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\app.c
+"44 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\app.c
 [v _appInit appInit `(v  1 e 1 0 ]
 {
-"48
+"47
 } 0
-"50
+"49
 [v _appHandler appHandler `(v  1 e 1 0 ]
 {
-"52
+"51
 [v appHandler@redOutput redOutput `us  1 s 2 redOutput ]
-"55
+"54
 [v appHandler@up up `i  1 s 2 up ]
-"78
+"80
 } 0
-"72 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm4.c
-[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+"118 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm1.c
+[v _PWM1_Stop PWM1_Stop `(v  1 e 1 0 ]
 {
-[v PWM4_LoadDutyValue@dutyValue dutyValue `us  1 p 2 2 ]
-"79
+"121
 } 0
-"72 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm3.c
-[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+"113
+[v _PWM1_Start PWM1_Start `(v  1 e 1 0 ]
 {
-[v PWM3_LoadDutyValue@dutyValue dutyValue `us  1 p 2 2 ]
-"79
+"116
 } 0
-"72 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm1.c
-[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"139
+[v _PWM1_DutyCycleSet PWM1_DutyCycleSet `(v  1 e 1 0 ]
 {
-[v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 2 ]
-"79
+[v PWM1_DutyCycleSet@dutyCycleCount dutyCycleCount `us  1 p 2 2 ]
+"143
 } 0
-"79 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr2.c
+"79 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr2.c
 [v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
 {
 "83
 } 0
-"50 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/mcc.c
+"50 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "61
 } 0
-"71
+"73
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 {
-"75
+"77
 } 0
-"62 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr2.c
+"62 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"64 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
+"64 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "91
@@ -272,37 +481,37 @@
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
 "180
 } 0
-"58 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm4.c
-[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
-{
-"70
-} 0
-"58 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm3.c
+"58 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm3.c
 [v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
 {
-"70
+"110
 } 0
-"58 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm1.c
+"58 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"58 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pwm1.c
 [v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
 {
-"70
+"110
 } 0
-"55 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"89
+"103
 } 0
-"63 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/mcc.c
+"63 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"69
+"71
 } 0
-"52 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "70
 } 0
-"157 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
+"157 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "167
@@ -323,8 +532,8 @@
 {
 "185
 } 0
-"80 C:\Users\justk\Documents\Projects\Pokeball_xs\Code\Pokeball_xs.X\app.c
+"82 C:\Users\JustinK\Desktop\Pokeball_xs\Code\Pokeball_xs.X\app.c
 [v _msTick msTick `(v  1 e 1 0 ]
 {
-"82
+"84
 } 0

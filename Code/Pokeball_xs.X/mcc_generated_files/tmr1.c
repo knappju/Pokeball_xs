@@ -14,7 +14,7 @@
     This source file provides APIs for TMR1.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
-        Device            :  PIC12LF1501
+        Device            :  PIC12LF1571
         Driver Version    :  2.11
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.31 and above
@@ -65,14 +65,14 @@ void TMR1_Initialize(void)
 {
     //Set the Timer to the options selected in the GUI
 
-    //T1GSS T1G_pin; TMR1GE disabled; T1GTM disabled; T1GPOL low; T1GGO_nDONE done; T1GSPM disabled; 
+    //T1GSS T1G_pin; TMR1GE disabled; T1GTM disabled; T1GPOL low; T1GGO done; T1GSPM disabled; 
     T1GCON = 0x00;
 
     //TMR1H 193; 
     TMR1H = 0xC1;
 
-    //TMR1L 208; 
-    TMR1L = 0xD0;
+    //TMR1L 128; 
+    TMR1L = 0x80;
 
     // Clearing IF flag before enabling the interrupt.
     PIR1bits.TMR1IF = 0;
@@ -146,7 +146,7 @@ void TMR1_Reload(void)
 
 void TMR1_StartSinglePulseAcquisition(void)
 {
-    T1GCONbits.T1GGO_nDONE = 1;
+    T1GCONbits.T1GGO = 1;
 }
 
 uint8_t TMR1_CheckGateValueStatus(void)

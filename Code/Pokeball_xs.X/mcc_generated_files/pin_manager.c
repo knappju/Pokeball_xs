@@ -14,7 +14,7 @@
     This header file provides implementations for pin APIs for all pins selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
-        Device            :  PIC12LF1501
+        Device            :  PIC12LF1571
         Driver Version    :  2.11
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.31 and above
@@ -75,11 +75,25 @@ void PIN_MANAGER_Initialize(void)
     WPUA = 0x00;
     OPTION_REGbits.nWPUEN = 1;
 
+    /**
+    ODx registers
+    */
+    ODCONA = 0x00;
+
+    /**
+    SLRCONx registers
+    */
+    SLRCONA = 0x37;
+
+    /**
+    INLVLx registers
+    */
+    INLVLA = 0x3F;
 
     /**
     APFCONx registers
     */
-    APFCON = 0x00;
+    APFCON = 0x03;
 
 
 

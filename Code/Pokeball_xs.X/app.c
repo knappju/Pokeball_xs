@@ -43,6 +43,7 @@ uint64_t msTicks = 0;
 
 void appInit(){
     TMR1_SetInterruptHandler(msTick);
+//    PWM1_Start();
 }
 
 void appHandler(){
@@ -52,24 +53,29 @@ void appHandler(){
     
     static int up = 0;
     
-    if(msTicks >= 30){
+    if(msTicks >= 1000){
         msTicks = 0;
         if(up == 0){
-            redOutput += 20;
-            if(redOutput >= 1000){
+            redOutput += 2000;
+            if(redOutput >= 50000){
                 up = 1;
             }
+            
         }
         else if(up == 1){
-            redOutput -= 20;
-            if (redOutput <= 20){
+            redOutput -= 2000;
+            if (redOutput <= 2000){
                 up = 0;
             }
         } 
-        PWM4_LoadDutyValue(redOutput);
-        PWM3_LoadDutyValue(greenOutput);
-        PWM1_LoadDutyValue(blueOutput);
-        
+//        PWM1_Stop();
+//        PWM1_DutyCycleSet(redOutput);
+//        PWM1_Start();
+//        PWM3_LoadDutyValue(greenOutput);
+//        PWM1_LoadDutyValue(blueOutput);
+        IO_RA5_SetHigh();
+        IO_RA4_SetHigh();
+        IO_RA2_SetHigh();
         
         
     }
