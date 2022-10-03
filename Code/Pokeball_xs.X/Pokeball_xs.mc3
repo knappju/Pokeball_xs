@@ -588,7 +588,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PWM1" registerAlias="PWMCON"/>
-         <value>128</value>
+         <value>192</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PWM1" registerAlias="PWMDCH"/>
@@ -664,7 +664,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PWM1" registerAlias="PWMCON" settingAlias="PWMOE"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PWM1" registerAlias="PWMCON" settingAlias="PWMOUT"/>
@@ -1080,7 +1080,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PWM2" registerAlias="PWMCON"/>
-         <value>128</value>
+         <value>192</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PWM2" registerAlias="PWMDCH"/>
@@ -1156,7 +1156,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PWM2" registerAlias="PWMCON" settingAlias="PWMOE"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PWM2" registerAlias="PWMCON" settingAlias="PWMOUT"/>
@@ -1576,7 +1576,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PWM3" registerAlias="PWMCON"/>
-         <value>128</value>
+         <value>192</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="PWM3" registerAlias="PWMDCH"/>
@@ -1652,7 +1652,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PWM3" registerAlias="PWMCON" settingAlias="PWMOE"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="PWM3" registerAlias="PWMCON" settingAlias="PWMOUT"/>
@@ -1780,7 +1780,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA2"/>
-         <value>IO_RA2</value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA3"/>
@@ -1788,19 +1788,19 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA4"/>
-         <value>IO_RA4</value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA5"/>
-         <value>IO_RA5</value>
+         <value/>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="P1SEL%aux2"/>
-         <value>%DESELECT%</value>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="P1SEL%aux0"/>
+         <value>RA5</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="P2SEL%aux0"/>
-         <value>%DESELECT%</value>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="P2SEL%aux2"/>
+         <value>RA4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Pin Module_IOCIISRFunction"/>
@@ -1816,7 +1816,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA2"/>
-         <value>output</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA3"/>
@@ -1824,11 +1824,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA4"/>
-         <value>output</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="RA5"/>
-         <value>output</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T1GSEL%aux1"/>
@@ -2280,7 +2280,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELA"/>
-         <value>22</value>
+         <value>6</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="APFCON"/>
@@ -2304,7 +2304,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="LATA"/>
-         <value>0</value>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ODCONA"/>
@@ -2340,7 +2340,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSA4"/>
-         <value>analog</value>
+         <value>digital</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="APFCON" settingAlias="CWGASEL"/>
@@ -2472,7 +2472,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="LATA" settingAlias="LATA0"/>
-         <value>clear</value>
+         <value>set</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="LATA" settingAlias="LATA1"/>
@@ -3315,7 +3315,23 @@
          <value>OFF</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>c62c6609ea0708b0a5ac62e1c24fbb6b4d65d1b0f84a131302d1caf61a035257</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>4721f787d64e8849d65de725e514db045eb6a105cdf77a726ca0fa3d792278c8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>06317a129d91f275c821b32dab74f76909814d4814e86afe2d8b8bfda02f4a7a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tmr1.h</file>
+         <hash>16f6492e2125956b1e0d102de912ee74327f816aa6712fb58cf19ed0a88922d0</hash>
+      </entry>
       <entry>
          <file>main.c</file>
          <hash>fff4a375267e483a93f7d4dfef7c4da154f097e358dfb1671d3629fa4d79d612</hash>
@@ -3325,72 +3341,56 @@
          <hash>d7027ab28c85055fd435ef01b4151b7c84a61b9b3f82d3bf545a3870ec8a5d5a</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>4721f787d64e8849d65de725e514db045eb6a105cdf77a726ca0fa3d792278c8</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>3e7b500aac301f5670ce01fd01717130411475b9952e41e090dea8102dc61ebc</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>06317a129d91f275c821b32dab74f76909814d4814e86afe2d8b8bfda02f4a7a</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>7d3b1473fe5fc141fc6f2e05ad9b798b70fe764fc71d595ddfd107768b8b0674</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>c62c6609ea0708b0a5ac62e1c24fbb6b4d65d1b0f84a131302d1caf61a035257</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>a83c125960e18b3c948f295a60bf85545ef09275f1f8600f9bc6bcb5059100e0</hash>
+         <file>mcc_generated_files\tmr2.h</file>
+         <hash>1116da46d6035e5cb7a53d3b0511d6045f4d195edc650586b0efbf166f5fd0c2</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>d21d451f10c5cc5f8138ae06b0e4ef5487c1932c9df83b88f435cb925a933ab1</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pwm1.c</file>
-         <hash>2d3a339b281734cca55507c0547cdcb06beb646e764c4068ee6b95098369110b</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pwm1.h</file>
-         <hash>eac5fb0de1d470e1ebbf8fdb54703be43a32254b014d39a76fb0ce31645191f4</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pwm2.c</file>
-         <hash>3ac308aef41aee4dbcfc9285833223faac036615cc606156e3968ef875b4abb9</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pwm2.h</file>
-         <hash>99d3a63d081f4d763d3fa919c4669bfebdcb087821701c20c995b4b0051e419a</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pwm3.c</file>
-         <hash>b43f14457cf2474403c852e43fc5e28b99094ad2d243ae1b239f89bf8c142faf</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pwm3.h</file>
-         <hash>a02a13c9251dc3c37192363dac044388ae17c54909091792412f4d8c0d074c90</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\tmr1.c</file>
-         <hash>cca0e96c4f94481025cb67d36e17fda1b3b0ee5b95ff4944ae4e5ca3cc815abc</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\tmr1.h</file>
-         <hash>16f6492e2125956b1e0d102de912ee74327f816aa6712fb58cf19ed0a88922d0</hash>
+         <hash>ae85bddae684761de93c7fdb6e773087ea769ff1fd62e13796200ea51d3347a5</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr2.c</file>
          <hash>452b3384a1b4d3c71e03dba4ae39d4a3237a97bc1b3676315a3856750ff2753d</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\tmr2.h</file>
-         <hash>1116da46d6035e5cb7a53d3b0511d6045f4d195edc650586b0efbf166f5fd0c2</hash>
+         <file>mcc_generated_files\tmr1.c</file>
+         <hash>cca0e96c4f94481025cb67d36e17fda1b3b0ee5b95ff4944ae4e5ca3cc815abc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>cb568996b7a0a9c398f0a67a88c7e10dff6ca39ceda1b524fce7786171bb75b9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pwm1.c</file>
+         <hash>fd924082f0d35f796225cafdb87bb7cbeb8093a695716c9fbb0c7ef3b6a97ad8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pwm1.h</file>
+         <hash>eac5fb0de1d470e1ebbf8fdb54703be43a32254b014d39a76fb0ce31645191f4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pwm2.h</file>
+         <hash>99d3a63d081f4d763d3fa919c4669bfebdcb087821701c20c995b4b0051e419a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pwm3.h</file>
+         <hash>a02a13c9251dc3c37192363dac044388ae17c54909091792412f4d8c0d074c90</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>7d3b1473fe5fc141fc6f2e05ad9b798b70fe764fc71d595ddfd107768b8b0674</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>3e7b500aac301f5670ce01fd01717130411475b9952e41e090dea8102dc61ebc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pwm2.c</file>
+         <hash>ffd24981691974f0f78149cd6e9dce07358d97fe32160965e4ad4513df2915ed</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pwm3.c</file>
+         <hash>eea7e0e11fc334bd887fd7da1dbf66b7c91c484b779c61b2036f01e19679b043</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

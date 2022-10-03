@@ -104,8 +104,8 @@ void PWM1_Initialize(void)
      //PWM1TMRL 0; 
     PWM1TMRL = 0x00;
 
-     //MODE standard_PWM; POL active_hi; OE disabled; EN enabled; 
-    PWM1CON = 0x80;
+     //MODE standard_PWM; POL active_hi; OE enabled; EN enabled; 
+    PWM1CON = 0xC0;
 
 }    
 

@@ -104,8 +104,8 @@ void PWM3_Initialize(void)
      //PWM3TMRL 0; 
     PWM3TMRL = 0x00;
 
-     //MODE standard_PWM; POL active_hi; OE disabled; EN enabled; 
-    PWM3CON = 0x80;
+     //MODE standard_PWM; POL active_hi; OE enabled; EN enabled; 
+    PWM3CON = 0xC0;
 
 }    
 
