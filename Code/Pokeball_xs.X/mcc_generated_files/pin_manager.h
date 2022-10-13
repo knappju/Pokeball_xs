@@ -65,25 +65,25 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set IO_RA0 aliases
-#define IO_RA0_TRIS                 TRISAbits.TRISA0
-#define IO_RA0_LAT                  LATAbits.LATA0
-#define IO_RA0_PORT                 PORTAbits.RA0
-#define IO_RA0_WPU                  WPUAbits.WPUA0
-#define IO_RA0_OD                   ODCONAbits.ODA0
-#define IO_RA0_ANS                  ANSELAbits.ANSA0
-#define IO_RA0_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
-#define IO_RA0_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
-#define IO_RA0_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
-#define IO_RA0_GetValue()           PORTAbits.RA0
-#define IO_RA0_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
-#define IO_RA0_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
-#define IO_RA0_SetPullup()          do { WPUAbits.WPUA0 = 1; } while(0)
-#define IO_RA0_ResetPullup()        do { WPUAbits.WPUA0 = 0; } while(0)
-#define IO_RA0_SetPushPull()        do { ODCONAbits.ODA0 = 0; } while(0)
-#define IO_RA0_SetOpenDrain()       do { ODCONAbits.ODA0 = 1; } while(0)
-#define IO_RA0_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
-#define IO_RA0_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
+// get/set BTN_IN aliases
+#define BTN_IN_TRIS                 TRISAbits.TRISA0
+#define BTN_IN_LAT                  LATAbits.LATA0
+#define BTN_IN_PORT                 PORTAbits.RA0
+#define BTN_IN_WPU                  WPUAbits.WPUA0
+#define BTN_IN_OD                   ODCONAbits.ODA0
+#define BTN_IN_ANS                  ANSELAbits.ANSA0
+#define BTN_IN_SetHigh()            do { LATAbits.LATA0 = 1; } while(0)
+#define BTN_IN_SetLow()             do { LATAbits.LATA0 = 0; } while(0)
+#define BTN_IN_Toggle()             do { LATAbits.LATA0 = ~LATAbits.LATA0; } while(0)
+#define BTN_IN_GetValue()           PORTAbits.RA0
+#define BTN_IN_SetDigitalInput()    do { TRISAbits.TRISA0 = 1; } while(0)
+#define BTN_IN_SetDigitalOutput()   do { TRISAbits.TRISA0 = 0; } while(0)
+#define BTN_IN_SetPullup()          do { WPUAbits.WPUA0 = 1; } while(0)
+#define BTN_IN_ResetPullup()        do { WPUAbits.WPUA0 = 0; } while(0)
+#define BTN_IN_SetPushPull()        do { ODCONAbits.ODA0 = 0; } while(0)
+#define BTN_IN_SetOpenDrain()       do { ODCONAbits.ODA0 = 1; } while(0)
+#define BTN_IN_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
+#define BTN_IN_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
 
 // get/set RA2 procedures
 #define RA2_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)

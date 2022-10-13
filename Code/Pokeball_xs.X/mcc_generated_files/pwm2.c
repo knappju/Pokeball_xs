@@ -65,8 +65,8 @@ void PWM2_Initialize(void)
      //PHIF cleared; OFIF cleared; DCIF cleared; PRIF cleared; 
     PWM2INTF = 0x00;
 
-     //PS No_Prescalar; CS FOSC; 
-    PWM2CLKCON = 0x00;
+     //PS Divide_clock_src_by_4; CS HFINTOSC; 
+    PWM2CLKCON = 0x21;
 
      //LDS reserved; LDT disabled; LDA do_not_load; 
     PWM2LDCON = 0x00;
@@ -86,17 +86,17 @@ void PWM2_Initialize(void)
      //PWM2DCL 0; 
     PWM2DCL = 0x00;
 
-     //PWM2PRH 0; 
-    PWM2PRH = 0x00;
+     //PWM2PRH 195; 
+    PWM2PRH = 0xC3;
 
-     //PWM2PRL 31; 
-    PWM2PRL = 0x1F;
+     //PWM2PRL 80; 
+    PWM2PRL = 0x50;
 
      //PWM2OFH 0; 
     PWM2OFH = 0x00;
 
-     //PWM2OFL 31; 
-    PWM2OFL = 0x1F;
+     //PWM2OFL 1; 
+    PWM2OFL = 0x01;
 
      //PWM2TMRH 0; 
     PWM2TMRH = 0x00;

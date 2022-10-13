@@ -5023,9 +5023,9 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 155 "./mcc_generated_files/pin_manager.h"
+# 132 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 167 "./mcc_generated_files/pin_manager.h"
+# 144 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -5337,10 +5337,22 @@ void WDT_Initialize(void);
 # 44 "main.c" 2
 
 # 1 "./app.h" 1
-# 15 "./app.h"
+# 16 "./app.h"
     extern void appInit();
     extern void appHandler();
     extern void msTick();
+
+
+    void initBlink(int numOfBlinks);
+    int blinkHandler(int NumOfBlinks);
+    void refreshColor();
+    void setColors(uint16_t r,uint16_t g,uint16_t b);
+# 33 "./app.h"
+    typedef struct LED{
+        uint16_t red;
+        uint16_t green;
+        uint16_t blue;
+    } LED_t;
 # 45 "main.c" 2
 
 

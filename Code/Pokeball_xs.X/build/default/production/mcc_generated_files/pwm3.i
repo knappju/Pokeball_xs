@@ -5067,7 +5067,7 @@ void PWM3_Initialize(void)
     PWM3INTF = 0x00;
 
 
-    PWM3CLKCON = 0x00;
+    PWM3CLKCON = 0x21;
 
 
     PWM3LDCON = 0x00;
@@ -5088,16 +5088,16 @@ void PWM3_Initialize(void)
     PWM3DCL = 0x00;
 
 
-    PWM3PRH = 0x00;
+    PWM3PRH = 0xC3;
 
 
-    PWM3PRL = 0x1F;
+    PWM3PRL = 0x50;
 
 
     PWM3OFH = 0x00;
 
 
-    PWM3OFL = 0x1F;
+    PWM3OFL = 0x01;
 
 
     PWM3TMRH = 0x00;
@@ -5106,7 +5106,7 @@ void PWM3_Initialize(void)
     PWM3TMRL = 0x00;
 
 
-    PWM3CON = 0x80;
+    PWM3CON = 0xC0;
 
 }
 

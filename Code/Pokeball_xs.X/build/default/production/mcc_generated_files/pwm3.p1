@@ -597,8 +597,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm3.c: 66:     PWM3INTF = 0x00;
 [e = _PWM3INTF -> -> 0 `i `uc ]
 "69
-[; ;mcc_generated_files/pwm3.c: 69:     PWM3CLKCON = 0x00;
-[e = _PWM3CLKCON -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pwm3.c: 69:     PWM3CLKCON = 0x21;
+[e = _PWM3CLKCON -> -> 33 `i `uc ]
 "72
 [; ;mcc_generated_files/pwm3.c: 72:     PWM3LDCON = 0x00;
 [e = _PWM3LDCON -> -> 0 `i `uc ]
@@ -618,17 +618,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm3.c: 87:     PWM3DCL = 0x00;
 [e = _PWM3DCL -> -> 0 `i `uc ]
 "90
-[; ;mcc_generated_files/pwm3.c: 90:     PWM3PRH = 0x00;
-[e = _PWM3PRH -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pwm3.c: 90:     PWM3PRH = 0xC3;
+[e = _PWM3PRH -> -> 195 `i `uc ]
 "93
-[; ;mcc_generated_files/pwm3.c: 93:     PWM3PRL = 0x1F;
-[e = _PWM3PRL -> -> 31 `i `uc ]
+[; ;mcc_generated_files/pwm3.c: 93:     PWM3PRL = 0x50;
+[e = _PWM3PRL -> -> 80 `i `uc ]
 "96
 [; ;mcc_generated_files/pwm3.c: 96:     PWM3OFH = 0x00;
 [e = _PWM3OFH -> -> 0 `i `uc ]
 "99
-[; ;mcc_generated_files/pwm3.c: 99:     PWM3OFL = 0x1F;
-[e = _PWM3OFL -> -> 31 `i `uc ]
+[; ;mcc_generated_files/pwm3.c: 99:     PWM3OFL = 0x01;
+[e = _PWM3OFL -> -> 1 `i `uc ]
 "102
 [; ;mcc_generated_files/pwm3.c: 102:     PWM3TMRH = 0x00;
 [e = _PWM3TMRH -> -> 0 `i `uc ]
@@ -636,8 +636,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm3.c: 105:     PWM3TMRL = 0x00;
 [e = _PWM3TMRL -> -> 0 `i `uc ]
 "108
-[; ;mcc_generated_files/pwm3.c: 108:     PWM3CON = 0x80;
-[e = _PWM3CON -> -> 128 `i `uc ]
+[; ;mcc_generated_files/pwm3.c: 108:     PWM3CON = 0xC0;
+[e = _PWM3CON -> -> 192 `i `uc ]
 "110
 [; ;mcc_generated_files/pwm3.c: 110: }
 [e :UE 423 ]

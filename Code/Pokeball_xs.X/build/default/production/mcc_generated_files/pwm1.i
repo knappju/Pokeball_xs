@@ -5106,7 +5106,7 @@ void PWM1_Initialize(void)
     PWM1TMRL = 0x00;
 
 
-    PWM1CON = 0x80;
+    PWM1CON = 0xC0;
 
 }
 

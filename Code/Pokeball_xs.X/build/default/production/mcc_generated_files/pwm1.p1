@@ -636,8 +636,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm1.c: 105:     PWM1TMRL = 0x00;
 [e = _PWM1TMRL -> -> 0 `i `uc ]
 "108
-[; ;mcc_generated_files/pwm1.c: 108:     PWM1CON = 0x80;
-[e = _PWM1CON -> -> 128 `i `uc ]
+[; ;mcc_generated_files/pwm1.c: 108:     PWM1CON = 0xC0;
+[e = _PWM1CON -> -> 192 `i `uc ]
 "110
 [; ;mcc_generated_files/pwm1.c: 110: }
 [e :UE 423 ]

@@ -65,8 +65,8 @@ void PWM3_Initialize(void)
      //PHIF cleared; OFIF cleared; DCIF cleared; PRIF cleared; 
     PWM3INTF = 0x00;
 
-     //PS No_Prescalar; CS FOSC; 
-    PWM3CLKCON = 0x00;
+     //PS Divide_clock_src_by_4; CS HFINTOSC; 
+    PWM3CLKCON = 0x21;
 
      //LDS reserved; LDT disabled; LDA do_not_load; 
     PWM3LDCON = 0x00;
@@ -86,17 +86,17 @@ void PWM3_Initialize(void)
      //PWM3DCL 0; 
     PWM3DCL = 0x00;
 
-     //PWM3PRH 0; 
-    PWM3PRH = 0x00;
+     //PWM3PRH 195; 
+    PWM3PRH = 0xC3;
 
-     //PWM3PRL 31; 
-    PWM3PRL = 0x1F;
+     //PWM3PRL 80; 
+    PWM3PRL = 0x50;
 
      //PWM3OFH 0; 
     PWM3OFH = 0x00;
 
-     //PWM3OFL 31; 
-    PWM3OFL = 0x1F;
+     //PWM3OFL 1; 
+    PWM3OFL = 0x01;
 
      //PWM3TMRH 0; 
     PWM3TMRH = 0x00;
