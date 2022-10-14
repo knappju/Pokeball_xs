@@ -49,10 +49,61 @@
 
 void SYSTEM_Initialize(void)
 {
+    
+    // THE REGISTERS WERE BROUGHT INTO HERE TO REDUCE THE SIZE OF THE PROGRAM
+    //***************************PIN INIT***************************
+    /**
+    LATx registers
+    */
+    LATA = 0x01;
 
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    WDT_Initialize();
+    /**
+    TRISx registers
+    */
+    TRISA = 0x0B;
+
+    /**
+    ANSELx registers
+    */
+    ANSELA = 0x06;
+
+    /**
+    WPUx registers
+    */
+    WPUA = 0x00;
+    WPUAbits.WPUA0 = 1;
+    OPTION_REGbits.nWPUEN = 0;
+
+    /**
+    ODx registers
+    */
+    ODCONA = 0x00;
+
+    /**
+    SLRCONx registers
+    */
+    SLRCONA = 0x37;
+
+    /**
+    INLVLx registers
+    */
+    INLVLA = 0x3F;
+
+    /**
+    APFCONx registers
+    */
+    APFCON = 0x03;
+    
+    //***************************OSC INIT***************************
+    // SCS FOSC; SPLLEN disabled; IRCF 16MHz_HF; 
+    OSCCON = 0x78;
+    // TUN 0; 
+    OSCTUNE = 0x00;
+    // SBOREN disabled; BORFS disabled; 
+    BORCON = 0x00;
+    //***************************WDT INIT***************************
+    // WDTPS 1:65536; SWDTEN OFF; 
+    WDTCON = 0x16;
     PWM1_Initialize();
     PWM2_Initialize();
     PWM3_Initialize();

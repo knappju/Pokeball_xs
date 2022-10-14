@@ -5067,7 +5067,7 @@ void PWM1_Initialize(void)
     PWM1INTF = 0x00;
 
 
-    PWM1CLKCON = 0x21;
+    PWM1CLKCON = 0x01;
 
 
     PWM1LDCON = 0x00;

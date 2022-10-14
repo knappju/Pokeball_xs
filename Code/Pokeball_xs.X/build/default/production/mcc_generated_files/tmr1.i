@@ -5049,6 +5049,29 @@ extern void (*TMR1_InterruptHandler)(void);
 void TMR1_DefaultInterruptHandler(void);
 # 52 "mcc_generated_files/tmr1.c" 2
 
+# 1 "mcc_generated_files/../main.h" 1
+# 15 "mcc_generated_files/../main.h"
+    extern void msTick();
+
+    void setColors(uint16_t r,uint16_t g,uint16_t b, uint8_t fade);
+# 26 "mcc_generated_files/../main.h"
+    typedef struct {
+            unsigned btnTicks :3;
+            unsigned debounceBuffer :5;
+    }DEBOUNCEbits_t;
+
+    typedef struct {
+          unsigned fade :8;
+          unsigned direction :1;
+          unsigned isCaught :1;
+          unsigned numOfBlinks :3;
+          unsigned currentBlinks :3;
+
+    }ACTIONbits_t;
+
+    uint16_t timeInState = 0;
+# 53 "mcc_generated_files/tmr1.c" 2
+
 
 
 
@@ -5162,7 +5185,8 @@ void TMR1_ISR(void)
 
 
 
-    TMR1_CallBack();
+
+    msTick();
 }
 
 void TMR1_CallBack(void)

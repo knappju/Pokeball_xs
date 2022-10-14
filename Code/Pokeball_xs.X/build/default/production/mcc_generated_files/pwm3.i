@@ -5067,7 +5067,7 @@ void PWM3_Initialize(void)
     PWM3INTF = 0x00;
 
 
-    PWM3CLKCON = 0x21;
+    PWM3CLKCON = 0x01;
 
 
     PWM3LDCON = 0x00;

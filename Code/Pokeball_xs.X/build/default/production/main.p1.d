@@ -9,4 +9,4 @@ mcc_generated_files/pwm2.h  \
 mcc_generated_files/pwm3.h  \
 mcc_generated_files/tmr1.h  \
 mcc_generated_files/tmr2.h  \
-app.h 
+main.h 

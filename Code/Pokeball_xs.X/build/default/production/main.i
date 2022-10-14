@@ -5336,38 +5336,47 @@ void OSCILLATOR_Initialize(void);
 void WDT_Initialize(void);
 # 44 "main.c" 2
 
-# 1 "./app.h" 1
-# 16 "./app.h"
-    extern void appInit();
-    extern void appHandler();
+# 1 "./main.h" 1
+# 15 "./main.h"
     extern void msTick();
 
+    void setColors(uint16_t r,uint16_t g,uint16_t b, uint8_t fade);
+# 26 "./main.h"
+    typedef struct {
+            unsigned btnTicks :3;
+            unsigned debounceBuffer :5;
+    }DEBOUNCEbits_t;
 
-    void initBlink(int numOfBlinks);
-    int blinkHandler(int NumOfBlinks);
-    void refreshColor();
-    void setColors(uint16_t r,uint16_t g,uint16_t b);
-# 33 "./app.h"
-    typedef struct LED{
-        uint16_t red;
-        uint16_t green;
-        uint16_t blue;
-    } LED_t;
+    typedef struct {
+          unsigned fade :8;
+          unsigned direction :1;
+          unsigned isCaught :1;
+          unsigned numOfBlinks :3;
+          unsigned currentBlinks :3;
+
+    }ACTIONbits_t;
+
+    uint16_t timeInState = 0;
 # 45 "main.c" 2
 
 
 
+enum state{INIT, SLEEP, READY_TO_ENTER_BUTTON, WAIT_FOR_BUTTON, BLINKING, CAUGHT, NOT_CAUGHT};
 
+enum state currentState = INIT;
+
+uint8_t randCounter = 0;
+
+DEBOUNCEbits_t DEBOUNCEbits;
+ACTIONbits_t ACTIONbits;
 
 void main(void)
 {
 
     SYSTEM_Initialize();
-    TMR2_StartTimer();
-    appInit();
 
 
-
+    T2CONbits.TMR2ON = 1;
 
 
     (INTCONbits.GIE = 1);
@@ -5375,15 +5384,153 @@ void main(void)
 
     (INTCONbits.PEIE = 1);
 
-
-
-
-
-
-
     while (1)
     {
-        appHandler();
 
+
+
+
+        if(DEBOUNCEbits.btnTicks >= 6){
+            DEBOUNCEbits.btnTicks = 0;
+            DEBOUNCEbits.debounceBuffer = (DEBOUNCEbits.debounceBuffer << 1 ) | !PORTAbits.RA0;
+        }
+
+        switch(currentState){
+            case INIT:
+                currentState = WAIT_FOR_BUTTON;
+                setColors(3500,3500,3500,0);
+                timeInState = 0;
+                break;
+            case SLEEP:
+                if(DEBOUNCEbits.debounceBuffer == 0x1F){
+                    currentState = READY_TO_ENTER_BUTTON;
+                    timeInState = 0;
+                }
+                break;
+            case READY_TO_ENTER_BUTTON:
+                if(DEBOUNCEbits.debounceBuffer == 0x00){
+                    currentState = WAIT_FOR_BUTTON;
+                    setColors(3500,3500,3500,0);
+                    timeInState = 0;
+                }
+                break;
+            case WAIT_FOR_BUTTON:
+                if(timeInState >= (60000)){
+                    setColors(0,0,0,0);
+                    currentState = SLEEP;
+                    timeInState = 0;
+                }
+                if(DEBOUNCEbits.debounceBuffer == 0x1F){
+                    ACTIONbits.fade = 0;
+                    ACTIONbits.direction = 0;
+                    ACTIONbits.currentBlinks = 0;
+                    ACTIONbits.numOfBlinks = ((randCounter >> 5) & 0x03) + 1;
+                    ACTIONbits.isCaught = ((randCounter >> 4) & 0x01);
+                    currentState = BLINKING;
+                    timeInState = 0;
+                }
+                break;
+            case BLINKING:
+                if(timeInState >= 25){
+                    if(ACTIONbits.direction == (0)){
+                        ACTIONbits.fade += 5;
+                        if(ACTIONbits.fade >= 140){
+                            ACTIONbits.direction = (1);
+                        }
+                    }
+                    else{
+                        ACTIONbits.fade -= 5;
+                        if(ACTIONbits.fade <= 15){
+                            ACTIONbits.direction = (0);
+                            ACTIONbits.currentBlinks++;
+                        }
+                    }
+                    timeInState = 0;
+                    setColors(65535,0,0,ACTIONbits.fade);
+                }
+                if(ACTIONbits.currentBlinks == ACTIONbits.numOfBlinks){
+                    if(ACTIONbits.isCaught){
+                        ACTIONbits.fade = 0;
+                        ACTIONbits.direction = 0;
+                        ACTIONbits.currentBlinks = 0;
+                        currentState = CAUGHT;
+                        timeInState = 0;
+                    }
+                    else{
+                        setColors(0,0,0,0);
+                        currentState = NOT_CAUGHT;
+                        timeInState = 0;
+                    }
+                }
+                break;
+            case CAUGHT:
+                if(timeInState >= 20){
+                    if(ACTIONbits.direction == (0)){
+                        ACTIONbits.fade += 30;
+                        timeInState = 0;
+                        if(ACTIONbits.fade >= 220){
+                            ACTIONbits.direction = (1);
+                        }
+                        setColors(65535,65535,65535,ACTIONbits.fade);
+                    }
+                    else{
+                        if(ACTIONbits.fade > 100){
+                            ACTIONbits.fade -= 15;
+                            timeInState = 0;
+                            setColors(65535,65535,65535,ACTIONbits.fade);
+                        }
+                    }
+                }
+                if(timeInState == (5000)){
+                    currentState = READY_TO_ENTER_BUTTON;
+                    setColors(3500,3500,3500,0);
+                    timeInState = 0;
+                }
+                break;
+            case NOT_CAUGHT:
+                if(timeInState == (1500)){
+                    currentState = READY_TO_ENTER_BUTTON;
+                    setColors(3500,3500,3500,0);
+                    timeInState = 0;
+                }
+                break;
+            default:
+                currentState = INIT;
+                timeInState = 0;
+                break;
+        }
     }
+}
+
+void msTick(){
+    DEBOUNCEbits.btnTicks++;
+    randCounter++;
+    timeInState++;
+}
+
+void setColors(uint16_t r, uint16_t g, uint16_t b, uint8_t fade){
+
+    if(fade > 0){
+        r = r >> 8;
+        r = r * fade;
+        g = g >> 8;
+        g = g * fade;
+        b = b >> 8;
+        b = b * fade;
+    }
+
+    PWM1CONbits.EN = 0;
+    PWM1DCH = (r>>8);
+    PWM1DCL = (r);
+    PWM1CONbits.EN = 1;
+
+    PWM2CONbits.EN = 0;
+    PWM2DCH = (g>>8);
+    PWM2DCL = (g);
+    PWM2CONbits.EN = 1;
+
+    PWM3CONbits.EN = 0;
+    PWM3DCH = (b>>8);
+    PWM3DCL = (b);
+    PWM3CONbits.EN = 1;
 }

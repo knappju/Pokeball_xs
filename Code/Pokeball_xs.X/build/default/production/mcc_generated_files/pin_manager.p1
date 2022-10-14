@@ -565,19 +565,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 "97
 [; ;mcc_generated_files/pin_manager.c: 97:     APFCON = 0x03;
 [e = _APFCON -> -> 3 `i `uc ]
-"104
-[; ;mcc_generated_files/pin_manager.c: 104: }
+"98
+[; ;mcc_generated_files/pin_manager.c: 98: }
 [e :UE 423 ]
 }
-"106
-[; ;mcc_generated_files/pin_manager.c: 106: void PIN_MANAGER_IOC(void)
+"100
+[; ;mcc_generated_files/pin_manager.c: 100: void PIN_MANAGER_IOC(void)
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"107
-[; ;mcc_generated_files/pin_manager.c: 107: {
+"101
+[; ;mcc_generated_files/pin_manager.c: 101: {
 {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"108
-[; ;mcc_generated_files/pin_manager.c: 108: }
+"102
+[; ;mcc_generated_files/pin_manager.c: 102: }
 [e :UE 424 ]
 }

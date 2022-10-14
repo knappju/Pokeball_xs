@@ -50,6 +50,7 @@
 
 #include <xc.h>
 #include "tmr1.h"
+#include "../main.h"
 
 /**
   Section: Global Variables Definitions
@@ -163,7 +164,8 @@ void TMR1_ISR(void)
 
     // ticker function call;
     // ticker is 1 -> Callback function gets called everytime this ISR executes
-    TMR1_CallBack();
+//    TMR1_CallBack();
+    msTick();
 }
 
 void TMR1_CallBack(void)

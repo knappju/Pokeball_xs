@@ -5072,12 +5072,6 @@ void PIN_MANAGER_Initialize(void)
 
 
     APFCON = 0x03;
-
-
-
-
-
-
 }
 
 void PIN_MANAGER_IOC(void)

@@ -597,8 +597,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pwm2.c: 66:     PWM2INTF = 0x00;
 [e = _PWM2INTF -> -> 0 `i `uc ]
 "69
-[; ;mcc_generated_files/pwm2.c: 69:     PWM2CLKCON = 0x21;
-[e = _PWM2CLKCON -> -> 33 `i `uc ]
+[; ;mcc_generated_files/pwm2.c: 69:     PWM2CLKCON = 0x01;
+[e = _PWM2CLKCON -> -> 1 `i `uc ]
 "72
 [; ;mcc_generated_files/pwm2.c: 72:     PWM2LDCON = 0x00;
 [e = _PWM2LDCON -> -> 0 `i `uc ]

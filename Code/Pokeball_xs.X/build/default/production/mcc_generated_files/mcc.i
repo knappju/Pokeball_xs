@@ -5341,9 +5341,60 @@ void WDT_Initialize(void);
 void SYSTEM_Initialize(void)
 {
 
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    WDT_Initialize();
+
+
+
+
+
+    LATA = 0x01;
+
+
+
+
+    TRISA = 0x0B;
+
+
+
+
+    ANSELA = 0x06;
+
+
+
+
+    WPUA = 0x00;
+    WPUAbits.WPUA0 = 1;
+    OPTION_REGbits.nWPUEN = 0;
+
+
+
+
+    ODCONA = 0x00;
+
+
+
+
+    SLRCONA = 0x37;
+
+
+
+
+    INLVLA = 0x3F;
+
+
+
+
+    APFCON = 0x03;
+
+
+
+    OSCCON = 0x78;
+
+    OSCTUNE = 0x00;
+
+    BORCON = 0x00;
+
+
+    WDTCON = 0x16;
     PWM1_Initialize();
     PWM2_Initialize();
     PWM3_Initialize();

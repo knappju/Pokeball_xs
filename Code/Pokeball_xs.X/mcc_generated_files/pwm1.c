@@ -66,7 +66,7 @@ void PWM1_Initialize(void)
     PWM1INTF = 0x00;
 
      //PS Divide_clock_src_by_4; CS HFINTOSC; 
-    PWM1CLKCON = 0x21;
+    PWM1CLKCON = 0x01;//0x21;
 
      //LDS reserved; LDT disabled; LDA do_not_load; 
     PWM1LDCON = 0x00;
